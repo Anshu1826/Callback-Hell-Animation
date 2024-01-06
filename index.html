@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Hell</title>
+    <style>
+        * {
+            padding: none;
+            margin: none;
+            box-sizing: border-box;
+        }
+ 
+        .word {
+            color: #308d46;
+            font-size: 4rem;
+            transition: all .5s ease-in;
+            margin: 0 5px;
+            transform: translateY(3.8rem);
+            opacity: 0;
+        }
+ 
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 95vw;
+            height: 95vh;
+        }
+ 
+        .container {
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+        }
+ 
+        .animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>CallBack Hell</h1> -->
+    <!-- <h3>Importance of Callback</h3>
+    <p>
+        Callbacks are a way to do asynchronous programming in JavaScript. Now we may wonder that why asynchronous programming is that much important, the answer to this question is that JavaScript is a singly threaded and synchronous programming language, that means, there is only a single call stack and once the piece of code enters the call stack, it is executed immediately. So in order to create any delay if expected, we make use of asynchronous programming via <b>Callbacks</b>. <br>
+        Asynchronous programming is the biggest advantages of Callbacks.
+    </p>
+    <h3>Problems due to Callbacks</h3>
+    <p>There are two main problems due to Callbacks which are listed as follows:
+        <ul>
+            <li>Callback Hell</li>
+            <li>Inversion of Control</li>
+        </ul>
+        Callback Hell means that we are nesting a callback inside another callback and so on, until we reach a state which is very difficult to understand. <br>
+        Inversion of Control means that we are making nested callback to depend on the outer callback, and the outer callback is solely responsible for calling and implementing the nested callback. Sometimes the outer callback may not work properly and hence the inside callbacks also suffer.
+        <br>
+        These two reasons are the biggest disadvantages of doing asynchronous programming via Callbacks.
+    </p> -->
+    <div class="container">
+        <h2 class="word">Love</h2>
+        <h2 class="word">My</h2>
+        <h2 class="word">India</h2>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
